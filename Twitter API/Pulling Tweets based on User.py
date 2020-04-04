@@ -20,7 +20,7 @@ target = "Mirsuljan"
 count=100
 
 # Function to Pull User's Most recent Tweets
-user_tweet = api.user_timeline(id=target, count=count)
+user_tweet = api.user_timeline(id=target, tweet_mode='extended', count=count)
 
 # View Most recent tweet
 user_tweet[0]
